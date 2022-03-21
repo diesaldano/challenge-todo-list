@@ -2,8 +2,8 @@ import React from 'react';
 import './CreateTodoButton.css';
 
 function CreateTodoButton(props) {
-  const onClick = (msg) => {
-    return console.log(msg)
+  const onClickButton = (msg) => {
+    alert(msg)
   }
 
   const onComplete = () => {
@@ -12,7 +12,7 @@ function CreateTodoButton(props) {
 
   return (
     <button className="CreateTodoButton"
-      onClick={() => onClick('Send Alert')}
+      onClick={() => onClickButton('Abrir Modal')}
     >+</button>
   );
 }
